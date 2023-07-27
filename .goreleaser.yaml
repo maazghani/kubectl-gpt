@@ -1,7 +1,7 @@
 project_name: kubectl-gpt
 release:
   github:
-    owner: devinjeon
+    owner: maazghani
     name: kubectl-gpt
 builds:
   - id: kubectl-gpt
@@ -36,28 +36,28 @@ checksum:
 
 brews:
   - tap:
-      owner: devinjeon
+      owner: maazghani
       name: kubectl-gpt
       branch: "{{ .Tag }}"
       pull_request:
         enabled: true
     commit_author:
-      name: Hyojun Jeon
-      email: jeon@hyojun.me
+      name: Maaz Ghani
+      email: maazghani@gmail.com
     description: "kubectl-gpt is a kubectl plugin to generate `kubectl` commands from natural language input by using OpenAI's GPT model."
-    homepage: https://github.com/devinjeon/kubectl-gpt
+    homepage: https://github.com/maazghani/kubectl-gpt
 
 krews:
   - name: gpt
     index:
-      owner: devinjeon
+      owner: maazghani
       name: kubectl-gpt
       branch: "{{ .Tag }}"
       pull_request:
         enabled: true
     commit_author:
-      name: Hyojun Jeon
-      email: jeon@hyojun.me
+      name: Maaz Ghani
+      email: maazghani@gmail.com
     description: "kubectl-gpt is a kubectl plugin to generate `kubectl` commands from natural language input by using OpenAI's GPT model."
     short_description: "Generate kubectl command using OpenAI GPT model."
-    homepage: https://github.com/devinjeon/kubectl-gpt
+    homepage: https://github.com/maazghani/kubectl-gpt
